@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
+import { FormState, FormDataState } from '../interfaces/states/form.interface';
 import { StateService } from './state.service';
 
 @Injectable({
@@ -25,14 +26,3 @@ const initialState: FormState = {
     forms: [],
     formId: 0,
 };
-
-interface FormState {
-    forms: FormDataState[];
-    formId: number;
-}
-
-export interface FormDataState {
-    firstName: string;
-    lastName: string;
-    age: number;
-}

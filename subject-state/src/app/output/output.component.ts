@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { FormDataState } from '../states/form.state.service';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { FormDataState } from '../interfaces/states/form.interface';
 
 @Component({
   selector: 'output-component',
   templateUrl: './output.component.html',
-  styleUrls: ['./output.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OutputComponent{
